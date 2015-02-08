@@ -1,0 +1,14 @@
+{
+  "name": "Heroku Redirect",
+  "description": "Super simple Node app that redirects all requests for an old Heroku app to a new URL",
+  "keywords": ["node", "redirect"],
+  "env": {
+    "NEW_BASE_URL": {
+      "description": "New URL to be redirected to. e.g. http://example.com"
+    },
+    "STATUS_CODE": {
+      "description": "Status code used when redirection. By default 302. Use 301 for SEO reason.",
+      "required": false
+    }
+  }
+}
