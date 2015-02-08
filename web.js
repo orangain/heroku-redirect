@@ -13,8 +13,8 @@ http.createServer(function(request, response) {
     'Content-Type': 'text/plain',
     'Location': location
   });
-  console.log('Redirecting to ' + location);
+  console.log('[' + new Date().toISOString() + '] Redirecting to ' + location);
   response.end();
 }).listen(port);
 
-console.log('Listening on ' + port);
+console.log('[' + new Date().toISOString() + '] Listening on ' + port);
